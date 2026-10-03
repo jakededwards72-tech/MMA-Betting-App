@@ -9,7 +9,7 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
-from .models import FighterProfile
+from models import FighterProfile
 
 BASE = "http://ufcstats.com"
 HEADERS = {"User-Agent": "Mozilla/5.0 MMAQuantEngine/1.0"}

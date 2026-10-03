@@ -6,8 +6,8 @@ from typing import Iterable
 
 import pandas as pd
 
-from .betting import evaluate_bet, devig_two_way
-from .models import SimulationSummary
+from betting import evaluate_bet, devig_two_way
+from models import SimulationSummary
 
 
 def simulation_table(summary: SimulationSummary) -> pd.DataFrame:

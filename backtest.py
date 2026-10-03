@@ -5,8 +5,8 @@ import math
 import numpy as np
 import pandas as pd
 
-from .betting import expected_roi
-from .models import SimulationSummary
+from betting import expected_roi
+from models import SimulationSummary
 
 
 def _clip(p):

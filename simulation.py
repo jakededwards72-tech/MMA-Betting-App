@@ -5,7 +5,7 @@ from typing import Any
 import math
 import numpy as np
 
-from .models import FighterProfile, FightContext, SimulationSummary
+from models import FighterProfile, FightContext, SimulationSummary
 
 
 PRIORS = {
