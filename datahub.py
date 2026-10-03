@@ -10,6 +10,12 @@ class DataHubError(RuntimeError): pass
 
 def _headers():
     key=os.getenv('FIGHT_FORENSICS_API_KEY','').strip()
+    if not key:
+        try:
+            import streamlit as st
+            key=str(st.secrets.get('FIGHT_FORENSICS_API_KEY','')).strip()
+        except Exception:
+            pass
     return {'X-Api-Key':key} if key else {}
 
 def _get(path, params=None, timeout=15):
