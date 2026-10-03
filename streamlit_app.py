@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 from models import FighterProfile,FightContext
 from simulation import simulate_fight
-from betting import implied_probability
+from betting import implied_probability_from_american
 from analysis import simulation_table,evaluate_moneyline_market,expert_breakdown
 from odds import fetch_mma_moneylines,flatten_moneylines,event_pairs,find_event_lines,best_line
 from datahub import profile_from_all_mma,merge_profiles,DataHubError
